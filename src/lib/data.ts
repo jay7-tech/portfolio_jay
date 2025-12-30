@@ -4,7 +4,7 @@ import type { IconType } from "react-icons";
 
 export const personalInfo = {
     name: "Jaydeep Gowda KB",
-    title: "Visionary Robotics & AI Engineer | Full-Stack Development Architect",
+    title: "Visionary Robotics & AI Engineer and Full-Stack Development Architect",
     location: "Bangalore, India",
     phone: "+91 8310491224",
     email: "jayadeepgowda24@gmail.com",

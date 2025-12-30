@@ -4,6 +4,7 @@ import { categorizedSkills } from '@/lib/data';
 import { AnimatedSection } from '../animated-section';
 import React from 'react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { BrainCircuit } from 'lucide-react';
 
 export function SkillsDock() {
   const allSkills = categorizedSkills.flatMap(category => category.skills);
