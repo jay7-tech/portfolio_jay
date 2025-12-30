@@ -40,8 +40,10 @@ export function CuratedWorkSection() {
                     />
                   </div>
                 )}
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
-                <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="absolute h-full w-1/3 bg-primary/10 blur-2xl transform rotate-45" />
+                  <div className="absolute h-full w-1/3 bg-primary/10 blur-2xl transform -rotate-45" />
+                </div>
               </div>
               
               <div className="flex flex-col justify-center">
