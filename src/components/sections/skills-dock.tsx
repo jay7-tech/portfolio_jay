@@ -47,21 +47,20 @@ export function SkillsDock() {
   return (
     <AnimatedSection id="skills">
       <div className="text-center">
-        <p className="text-sm uppercase text-muted-foreground tracking-widest">My Skills</p>
+        <p className="text-sm uppercase text-muted-foreground tracking-widest">Technical Toolkit</p>
         <h2 className="font-headline text-4xl md:text-5xl mt-2">
-            The Secret <span className="text-primary">Sauce</span>
+            The Tools I Use to <span className="text-primary">Build</span>
         </h2>
       </div>
 
-      <div className="mt-16 flex flex-wrap justify-center gap-4">
+      <div className="mt-16 flex flex-wrap justify-center gap-6 md:gap-8">
         {allSkills.map((skill, index) => {
           const Icon = skillIcons[skill.name] || Code;
           return (
-            <div key={index} className="group relative flex flex-col items-center justify-center gap-2">
-                <div className="flex h-20 w-20 items-center justify-center rounded-2xl border bg-card shadow-sm transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-primary/20 group-hover:shadow-lg">
+            <div key={index} className="group relative" title={skill.name}>
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl border bg-card shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-2 group-hover:shadow-primary/20 group-hover:shadow-lg">
                     <Icon className="h-10 w-10 text-primary" />
                 </div>
-                <p className="text-sm font-medium text-muted-foreground opacity-0 transition-opacity duration-300 group-hover:opacity-100">{skill.name}</p>
             </div>
           );
         })}
