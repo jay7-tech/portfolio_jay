@@ -23,13 +23,12 @@ export function CuratedWorkSection() {
       </div>
 
       <div className="mt-16 space-y-24">
-        {projects.map((project, index) => {
+        {projects.map((project) => {
           const image = getImage(project.image);
-          const isReversed = index % 2 !== 0;
 
           return (
             <div key={project.title} className={`grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center`}>
-              <div className={`relative group md:col-span-3 aspect-[4/3] rounded-lg overflow-hidden border ${isReversed ? 'md:order-last' : ''}`}>
+              <div className={`relative group md:col-span-3 aspect-[4/3] rounded-lg overflow-hidden border`}>
                 {image && (
                   <Image
                     src={image.imageUrl}
@@ -47,11 +46,9 @@ export function CuratedWorkSection() {
                   <Badge variant="secondary" className="mb-3 w-fit">{project.recognition}</Badge>
                 )}
                 <h3 className="font-headline text-2xl md:text-3xl">{project.title}</h3>
-                <ul className="list-disc pl-5 mt-4 space-y-2 text-muted-foreground">
-                  {project.description.map((desc, i) => (
-                    <li key={i}>{desc}</li>
-                  ))}
-                </ul>
+                <p className="mt-4 text-muted-foreground">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2 mt-6">
                   {project.tags.map(tag => {
                     const Icon = tag.icon

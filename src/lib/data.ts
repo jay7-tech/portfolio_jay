@@ -26,7 +26,7 @@ type Project = {
     title: string;
     recognition: string | null;
     image: string;
-    description: string[];
+    description: string;
     githubUrl: string;
     tags: { name: string; icon: IconType | ((props: any) => JSX.Element) }[];
 }
@@ -36,11 +36,7 @@ export const projects: Project[] = [
         title: "YoloMart | Smart Retail Ecosystem",
         recognition: "Secured 2nd Place at GlitchVerse 2k25 Project Expo at BIT.",
         image: "yolomart",
-        description: [
-            "Pioneered an intelligent agent for product reasoning and an ML-driven camera system for autonomous user tracking.",
-            "Engineered a synchronized Smart Cart featuring high-speed QR/Barcode scanning and real-time data retrieval.",
-            "Integrated allergy-safe filtering, behavior-based recommendations, and smart in-store navigation mapping.",
-        ],
+        description: "Pioneered an intelligent agent for product reasoning and an ML-driven camera system for autonomous user tracking. Engineered a synchronized Smart Cart featuring high-speed QR/Barcode scanning and real-time data retrieval, and integrated allergy-safe filtering, behavior-based recommendations, and smart in-store navigation mapping.",
         githubUrl: "https://github.com/jay7-tech/yolomart",
         tags: [
             { name: "React", icon: SiReact },
@@ -53,12 +49,7 @@ export const projects: Project[] = [
         title: "High Five | Real-Time Social Platform",
         recognition: null,
         image: "highfive",
-        description: [
-            "Conceptualized and deployed a high-energy platform for anonymous voice connections using Flask and WebSockets.",
-            "Deployed a robust WebRTC engine with STUN/TURN servers to ensure seamless and reliable exchange across restrictive networks.",
-            "Revolutionized the user experience with an audio-reactive interface that pulses based on real-time voice frequency data.",
-            "Championed a 'Consent-First' architecture where social handles are only revealed upon mutual, explicit agreement.",
-        ],
+        description: "Conceptualized and deployed a high-energy platform for anonymous voice connections using Flask and WebSockets. Deployed a robust WebRTC engine with STUN/TURN servers to ensure seamless and reliable exchange across restrictive networks. Revolutionized the user experience with an audio-reactive interface that pulses based on real-time voice frequency data and championed a 'Consent-First' architecture where social handles are only revealed upon mutual, explicit agreement.",
         githubUrl: "https://github.com/jay7-tech/high-five",
         tags: [
             { name: "Flask", icon: SiFlask },
@@ -71,9 +62,7 @@ export const projects: Project[] = [
         title: "Movifi | Online Show Booking Website",
         recognition: null,
         image: "movifi",
-        description: [
-            "Developed a modern, online show booking website using TypeScript, focusing on a clean user interface and robust booking functionality.",
-        ],
+        description: "Developed a modern, online show booking website using TypeScript, focusing on a clean user interface and robust booking functionality.",
         githubUrl: "https://github.com/jay7-tech/movifi",
         tags: [
             { name: "TypeScript", icon: SiTypescript },
@@ -86,10 +75,7 @@ export const projects: Project[] = [
         title: "Anveshana-2024 (National Finalist)",
         recognition: "Secured National Finalist status, placing among the top 28 teams in India.",
         image: "anveshana",
-        description: [
-            "Spearheaded the development of a piezoelectric footstep power generation system.",
-            "Designed a fall-sensing alert smart jacket for enhanced personal safety.",
-        ],
+        description: "Spearheaded the development of a piezoelectric footstep power generation system and designed a fall-sensing alert smart jacket for enhanced personal safety.",
         githubUrl: "https://github.com/jay7-tech/anveshana-2024",
         tags: [
             { name: "Hardware", icon: HardDrive },
