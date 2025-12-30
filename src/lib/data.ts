@@ -27,6 +27,7 @@ export const skills = [
       { name: "Python", description: "", icon: SiPython },
       { name: "Machine Learning", description: "", icon: Share2 },
       { name: "Computer Vision", description: "", icon: ScanLine },
+      { name: "YOLO", description: "Object detection", icon: "YoloIcon" },
       { name: "ABB Robot Simulation", description: "Industrial arm operation and simulation", icon: Bot },
       { name: "Autodesk", description: "Engineering and design", icon: SiAutodesk },
       { name: "Firebase", description: "Cloud services and deployment", icon: SiFirebase },
