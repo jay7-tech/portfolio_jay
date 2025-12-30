@@ -1,4 +1,4 @@
-import { Linkedin, HardDrive, Waves, Bot, BrainCircuit, Camera } from "lucide-react";
+import { Linkedin, HardDrive, Waves, Bot, Share2, Camera } from "lucide-react";
 import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc, SiGithub, SiTailwindcss, SiCss3, SiFirebase, SiAutodesk } from "react-icons/si";
 import type { IconType } from "react-icons";
 
@@ -25,7 +25,7 @@ export const skills = [
       { name: "Tailwind CSS", description: "Styling", icon: SiTailwindcss },
       { name: "CSS", description: "Foundational styling", icon: SiCss3 },
       { name: "Python", description: "", icon: SiPython },
-      { name: "Machine Learning", description: "", icon: BrainCircuit },
+      { name: "Machine Learning", description: "", icon: Share2 },
       { name: "Computer Vision", description: "", icon: Camera },
       { name: "ABB Robot Simulation", description: "Industrial arm operation and simulation", icon: Bot },
       { name: "Autodesk", description: "Engineering and design", icon: SiAutodesk },
@@ -36,43 +36,6 @@ export const skills = [
       { name: "WebRTC", description: "Real-time communication", icon: SiWebrtc },
       { name: "Flask", description: "Python web framework", icon: SiFlask },
 ];
-
-export const categorizedSkills = [
-  {
-    category: "The MERN Stack & Web Core",
-    skills: [
-      { name: "MongoDB", description: "Database", icon: SiMongodb },
-      { name: "Express.js", description: "Backend framework", icon: SiExpress },
-      { name: "React", description: "Frontend library", icon: SiReact },
-      { name: "Node.js", description: "Runtime environment", icon: SiNodedotjs },
-      { name: "JavaScript", description: "", icon: SiJavascript },
-      { name: "TypeScript", description: "", icon: SiTypescript },
-      { name: "Tailwind CSS", description: "Styling", icon: SiTailwindcss },
-      { name: "CSS", description: "Foundational styling", icon: SiCss3 },
-    ],
-  },
-  {
-    category: "The AI & Robotics Suite",
-    skills: [
-      { name: "Python", description: "", icon: SiPython },
-      { name: "Machine Learning", description: "", icon: BrainCircuit },
-      { name: "Computer Vision", description: "", icon: Camera },
-      { name: "ABB Robot Simulation", description: "Industrial arm operation and simulation", icon: Bot },
-      { name: "Autodesk", description: "Engineering and design", icon: SiAutodesk },
-    ],
-  },
-  {
-    category: "DevOps & Infrastructure",
-    skills: [
-        { name: "Firebase", description: "Cloud services and deployment", icon: SiFirebase },
-        { name: "Docker", description: "Containerization", icon: SiDocker },
-        { name: "Git", description: "Version control", icon: SiGit },
-        { name: "GitHub", description: "Repository hosting", icon: SiGithub },
-        { name: "WebRTC", description: "Real-time communication", icon: SiWebrtc },
-        { name: "Flask", description: "Python web framework", icon: SiFlask },
-    ]
-  }
-]
 
 type Project = {
     title: string;
