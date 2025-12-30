@@ -17,7 +17,7 @@ export const personalInfo = {
 
 export const skills = {
     "Full-Stack Development": ["MERN Stack", "JavaScript", "Python", "TypeScript", "React", "Node.js", "MongoDB", "Express.js", "Flask"],
-    "Autonomous Systems & AI": ["Machine Learning", "Computer Vision", "YOLO", "Autonomous Systems", "Robotics Simulation", "ABB Arm Robot"],
+    "Autonomous Systems & AI": ["Computer Vision", "YOLO", "Autonomous Systems", "Robotics Simulation", "ABB Arm Robot"],
     "Tools & Platforms": ["WebSockets", "WebRTC", "Git", "GitHub", "Docker"],
 };
 
