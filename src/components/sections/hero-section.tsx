@@ -6,7 +6,7 @@ import { ArrowDown } from 'lucide-react';
 export function HeroSection() {
   return (
     <section id="hero" className="relative w-full h-[75vh] flex flex-col items-center justify-center text-center px-4 z-10">
-      <div className="max-w-4xl pt-16">
+      <div className="max-w-4xl pt-24">
         <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl">
          JAYDEEP GOWDA
         </h1>
