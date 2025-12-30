@@ -5,7 +5,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { AnimatedSection } from '../animated-section';
 import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
-import { Github, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { SiGithub } from 'react-icons/si';
 
 export function CuratedWorkSection() {
   const getImage = (id: string) => {
@@ -65,7 +66,7 @@ export function CuratedWorkSection() {
                 <div className="flex items-center gap-4 mt-6">
                   <Button asChild>
                     <Link href={project.githubUrl} target="_blank">
-                      <Github />
+                      <SiGithub />
                       <span>View on GitHub</span>
                     </Link>
                   </Button>

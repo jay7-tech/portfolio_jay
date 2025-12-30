@@ -1,6 +1,7 @@
 import { personalInfo } from '@/lib/data';
 import { ThemeToggle } from '../theme-toggle';
 import { Button } from '../ui/button';
+import type { IconType } from 'react-icons';
 
 export default function Footer() {
   return (
@@ -10,13 +11,16 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} {personalInfo.name}
         </p>
         <div className="flex items-center gap-2">
-          {personalInfo.socials.map((social) => (
-            <Button key={social.name} variant="ghost" size="icon" asChild>
-              <a href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
-                <social.icon className="h-5 w-5" />
-              </a>
-            </Button>
-          ))}
+          {personalInfo.socials.map((social) => {
+            const Icon = social.icon as IconType;
+            return (
+              <Button key={social.name} variant="ghost" size="icon" asChild>
+                <a href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
+                  <Icon className="h-5 w-5" />
+                </a>
+              </Button>
+            );
+          })}
           <ThemeToggle />
         </div>
       </div>

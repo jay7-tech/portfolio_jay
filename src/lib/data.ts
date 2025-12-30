@@ -1,5 +1,6 @@
-import { Github, Linkedin, type LucideIcon } from "lucide-react";
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc, SiWebsockets } from "react-icons/si";
+import { Linkedin, HardDrive, Waves } from "lucide-react";
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc } from "react-icons/si";
+import type { IconType } from "react-icons";
 
 export const personalInfo = {
     name: "Jaydeep Gowda KB",
@@ -9,7 +10,7 @@ export const personalInfo = {
     email: "jayadeepgowda24@gmail.com",
     socials: [
         { name: "LinkedIn", url: "https://linkedin.com/in/jay7788", icon: Linkedin },
-        { name: "GitHub", url: "https://github.com/jay7-tech", icon: Github },
+        { name: "GitHub", url: "https://github.com/jay7-tech", icon: SiGit },
     ],
     summary: "An impact-focused Engineering undergraduate specializing in Robotics and Artificial Intelligence. I drive innovation by fusing cutting-edge technology with an entrepreneurial mindset to architect sustainable solutions with tangible real-world impact. Proficient across the MERN stack, advanced machine learning, and autonomous hardware, I am a strategic communicator who excels at mastering complex technical challenges through excellence and strategic communication.",
 };
@@ -27,7 +28,7 @@ type Project = {
     image: string;
     description: string[];
     githubUrl: string;
-    tags: { name: string; icon: LucideIcon | React.ComponentType<{ className?: string }> }[];
+    tags: { name: string; icon: IconType | ((props: any) => JSX.Element) }[];
 }
 
 export const projects: Project[] = [
@@ -61,7 +62,7 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/jay7-tech/high-five",
         tags: [
             { name: "Flask", icon: SiFlask },
-            { name: "WebSockets", icon: SiWebsockets },
+            { name: "WebSockets", icon: Waves },
             { name: "WebRTC", icon: SiWebrtc },
             { name: "JavaScript", icon: SiJavascript },
         ],
@@ -91,7 +92,7 @@ export const projects: Project[] = [
         ],
         githubUrl: "https://github.com/jay7-tech/anveshana-2024",
         tags: [
-            { name: "Hardware", icon: GitBranch },
+            { name: "Hardware", icon: HardDrive },
         ]
     },
 ];
