@@ -14,7 +14,6 @@ import type { IconType } from 'react-icons';
 
 const skillIcons: { [key: string]: IconType | LucideIcon } = {
     'React': SiReact,
-    'AI': BrainCircuit,
     'Machine Learning': BrainCircuit,
     'Robotics Simulation': Bot,
     'MERN Stack': SiReact,
