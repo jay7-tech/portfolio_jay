@@ -1,3 +1,4 @@
+
 import { marqueeSkills } from "@/lib/data";
 
 export function SkillsMarquee() {
@@ -17,7 +18,7 @@ export function SkillsMarquee() {
   );
 
   return (
-    <div className="relative w-full py-8 overflow-hidden z-10 -rotate-3 scale-110">
+    <div className="relative w-full py-8 overflow-hidden z-10 -rotate-6 scale-110">
       <div className="absolute inset-0 flex">
         <div className="relative w-full h-12 bg-primary flex items-center">
           <MarqueeContent />
