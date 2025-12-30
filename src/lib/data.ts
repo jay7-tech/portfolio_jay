@@ -17,6 +17,19 @@ export const personalInfo = {
 
 export const categorizedSkills = [
   {
+    category: "The MERN Stack & Web Core",
+    skills: [
+      { name: "MongoDB", description: "Database", icon: SiMongodb },
+      { name: "Express.js", description: "Backend framework", icon: SiExpress },
+      { name: "React", description: "Frontend library", icon: SiReact },
+      { name: "Node.js", description: "Runtime environment", icon: SiNodedotjs },
+      { name: "JavaScript", description: "", icon: SiJavascript },
+      { name: "TypeScript", description: "", icon: SiTypescript },
+      { name: "Tailwind CSS", description: "Styling", icon: SiTailwindcss },
+      { name: "CSS", description: "Foundational styling", icon: SiCss3 },
+    ],
+  },
+  {
     category: "The AI & Robotics Suite",
     skills: [
       { name: "Python", description: "", icon: SiPython },
@@ -27,20 +40,6 @@ export const categorizedSkills = [
     ],
   },
   {
-    category: "The MERN Stack & Web Core",
-    skills: [
-      { name: "JavaScript", description: "", icon: SiJavascript },
-      { name: "TypeScript", description: "", icon: SiTypescript },
-      { name: "React", description: "Frontend library", icon: SiReact },
-      { name: "Node.js", description: "Runtime environment", icon: SiNodedotjs },
-      { name: "Express.js", description: "Backend framework", icon: SiExpress },
-      { name: "MongoDB", description: "Database", icon: SiMongodb },
-      { name: "Flask", description: "Python web framework", icon: SiFlask },
-      { name: "Tailwind CSS", description: "Styling", icon: SiTailwindcss },
-      { name: "CSS", description: "Foundational styling", icon: SiCss3 },
-    ],
-  },
-  {
     category: "DevOps & Infrastructure",
     skills: [
         { name: "Firebase", description: "Cloud services and deployment", icon: SiFirebase },
@@ -48,6 +47,7 @@ export const categorizedSkills = [
         { name: "Git", description: "Version control", icon: SiGit },
         { name: "GitHub", description: "Repository hosting", icon: SiGithub },
         { name: "WebRTC", description: "Real-time communication", icon: SiWebrtc },
+        { name: "Flask", description: "Python web framework", icon: SiFlask },
     ]
   }
 ]

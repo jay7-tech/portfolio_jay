@@ -4,11 +4,8 @@ import { categorizedSkills } from '@/lib/data';
 import { AnimatedSection } from '../animated-section';
 import React from 'react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { BrainCircuit } from 'lucide-react';
 
 export function SkillsDock() {
-  const allSkills = categorizedSkills.flatMap(category => category.skills);
-
   return (
     <AnimatedSection id="skills">
       <div className="text-center">
@@ -18,25 +15,32 @@ export function SkillsDock() {
         </h2>
       </div>
 
-      <TooltipProvider>
-        <div className="mt-16 flex flex-wrap justify-center gap-4 md:gap-6">
-          {allSkills.map((skill) => {
-            const Icon = skill.icon;
-            return (
-              <Tooltip key={skill.name}>
-                <TooltipTrigger asChild>
-                  <div className="group flex h-16 w-16 items-center justify-center rounded-2xl bg-card border border-border/20 p-3 transition-all duration-300 hover:border-primary/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10">
-                    <Icon className="h-full w-full text-foreground/80 transition-colors group-hover:text-foreground" />
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{skill.name}</p>
-                </TooltipContent>
-              </Tooltip>
-            );
-          })}
-        </div>
-      </TooltipProvider>
+      <div className="mt-16 space-y-12">
+        {categorizedSkills.map((category) => (
+          <div key={category.category}>
+            <h3 className="text-lg font-semibold tracking-wider text-center mb-6 uppercase text-muted-foreground">{category.category}</h3>
+            <TooltipProvider>
+              <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+                {category.skills.map((skill) => {
+                  const Icon = skill.icon;
+                  return (
+                    <Tooltip key={skill.name}>
+                      <TooltipTrigger asChild>
+                        <div className="group flex h-16 w-16 items-center justify-center rounded-2xl bg-card border border-border/20 p-3 transition-all duration-300 hover:border-primary/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10">
+                          <Icon className="h-full w-full text-foreground/80 transition-colors group-hover:text-foreground" />
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>{skill.name}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  );
+                })}
+              </div>
+            </TooltipProvider>
+          </div>
+        ))}
+      </div>
     </AnimatedSection>
   );
 }
