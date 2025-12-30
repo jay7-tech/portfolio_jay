@@ -71,8 +71,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: linear-gradient(to bottom, hsl(var(--background)), hsl(var(--accent)));
-    background-attachment: fixed;
   }
   html {
     scroll-behavior: smooth;

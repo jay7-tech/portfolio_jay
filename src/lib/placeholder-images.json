@@ -23,6 +23,12 @@
       "description": "Power generation project image",
       "imageUrl": "https://images.unsplash.com/photo-1668578841382-90d7099ee848?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlbmVyZ3klMjBpbm5vdmF0aW9ufGVufDB8fHx8MTc2NzA4MTcyMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "energy innovation"
+    },
+    {
+      "id": "profile-picture",
+      "description": "A placeholder image for the author's profile picture",
+      "imageUrl": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9maWxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY3MDgxNTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "profile portrait"
     }
   ]
 }

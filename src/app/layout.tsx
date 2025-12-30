@@ -24,10 +24,12 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <ThemeProvider>
-          <Header />
-          <main className="pt-20">{children}</main>
-          <Footer />
-          <Toaster />
+          <div className='relative'>
+            <Header />
+            <main className="relative">{children}</main>
+            <Footer />
+            <Toaster />
+          </div>
         </ThemeProvider>
       </body>
     </html>
