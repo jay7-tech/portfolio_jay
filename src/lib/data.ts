@@ -15,6 +15,28 @@ export const personalInfo = {
     summary: "An impact-focused Engineering undergraduate specializing in Robotics and Artificial Intelligence. I drive innovation by fusing cutting-edge technology with an entrepreneurial mindset to architect sustainable solutions with tangible real-world impact. Proficient across the MERN stack, advanced machine learning, and autonomous hardware, I am a strategic communicator who excels at mastering complex technical challenges through excellence and strategic communication.",
 };
 
+export const skills = [
+      { name: "MongoDB", description: "Database", icon: SiMongodb },
+      { name: "Express.js", description: "Backend framework", icon: SiExpress },
+      { name: "React", description: "Frontend library", icon: SiReact },
+      { name: "Node.js", description: "Runtime environment", icon: SiNodedotjs },
+      { name: "JavaScript", description: "", icon: SiJavascript },
+      { name: "TypeScript", description: "", icon: SiTypescript },
+      { name: "Tailwind CSS", description: "Styling", icon: SiTailwindcss },
+      { name: "CSS", description: "Foundational styling", icon: SiCss3 },
+      { name: "Python", description: "", icon: SiPython },
+      { name: "Machine Learning", description: "", icon: BrainCircuit },
+      { name: "Computer Vision", description: "", icon: Camera },
+      { name: "ABB Robot Simulation", description: "Industrial arm operation and simulation", icon: Bot },
+      { name: "Autodesk", description: "Engineering and design", icon: SiAutodesk },
+      { name: "Firebase", description: "Cloud services and deployment", icon: SiFirebase },
+      { name: "Docker", description: "Containerization", icon: SiDocker },
+      { name: "Git", description: "Version control", icon: SiGit },
+      { name: "GitHub", description: "Repository hosting", icon: SiGithub },
+      { name: "WebRTC", description: "Real-time communication", icon: SiWebrtc },
+      { name: "Flask", description: "Python web framework", icon: SiFlask },
+];
+
 export const categorizedSkills = [
   {
     category: "The MERN Stack & Web Core",
@@ -173,7 +195,7 @@ export const experiences = [
 
 export const marqueeSkills = ["INTERACTIVE", "SECURE", "RELIABLE", "ENGAGING", "ACCESSIBLE", "RESPONSIVE", "DYNAMIC", "SCALABLE", "SEARCH OPTIMIZED"];
 
-export const skills = {
+export const skills_old = {
     "Full-Stack Development": ["MERN Stack", "JavaScript", "Python", "TypeScript", "React", "Node.js", "MongoDB", "Express.js", "Flask"],
     "Autonomous Systems & AI": ["Computer Vision", "YOLO", "Autonomous Systems", "Robotics Simulation", "ABB Arm Robot"],
     "Tools & Platforms": ["WebSockets", "WebRTC", "Git", "GitHub", "Docker"],
