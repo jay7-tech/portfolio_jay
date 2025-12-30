@@ -24,6 +24,7 @@ export const projects = [
     {
         title: "YoloMart | Smart Retail Ecosystem",
         recognition: "Secured 2nd Place at GlitchVerse 2k25 Project Expo at BIT.",
+        image: "yolomart",
         description: [
             "Pioneered an intelligent agent for product reasoning and an ML-driven camera system for autonomous user tracking.",
             "Engineered a synchronized Smart Cart featuring high-speed QR/Barcode scanning and real-time data retrieval.",
@@ -33,6 +34,7 @@ export const projects = [
     {
         title: "High Five | Real-Time Social Platform",
         recognition: null,
+        image: "highfive",
         description: [
             "Conceptualized and deployed a high-energy platform for anonymous voice connections using Flask and WebSockets.",
             "Deployed a robust WebRTC engine with STUN/TURN servers to ensure seamless and reliable exchange across restrictive networks.",
@@ -43,6 +45,7 @@ export const projects = [
     {
         title: "Movifi | Online Show Booking Website",
         recognition: null,
+        image: "movifi",
         description: [
             "Developed a modern, online show booking website using TypeScript, focusing on a clean user interface and robust booking functionality.",
         ],
@@ -50,6 +53,7 @@ export const projects = [
     {
         title: "Anveshana-2024 (National Finalist)",
         recognition: "Secured National Finalist status, placing among the top 28 teams in India.",
+        image: "anveshana",
         description: [
             "Spearheaded the development of a piezoelectric footstep power generation system.",
             "Designed a fall-sensing alert smart jacket for enhanced personal safety.",
