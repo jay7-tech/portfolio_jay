@@ -19,14 +19,16 @@ export function SkillsMarquee() {
 
   return (
     <div className="relative w-full py-8 overflow-hidden z-10 rotate-6 scale-110">
-      <div className="absolute inset-0 flex">
-        <div className="relative w-full h-12 bg-primary flex items-center">
+      {/* Shadow Layer */}
+      <div className="absolute inset-0 flex top-1.5">
+         <div className="relative w-full h-12 bg-black/40 flex items-center">
           <MarqueeContent />
           <MarqueeContent />
         </div>
       </div>
-      <div className="absolute inset-0 flex top-1.5">
-         <div className="relative w-full h-12 bg-black/40 flex items-center">
+      {/* Main Layer */}
+      <div className="relative flex">
+        <div className="relative w-full h-12 bg-primary flex items-center">
           <MarqueeContent />
           <MarqueeContent />
         </div>
