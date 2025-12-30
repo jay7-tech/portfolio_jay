@@ -1,4 +1,5 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, type LucideIcon } from "lucide-react";
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc, SiWebsockets } from "react-icons/si";
 
 export const personalInfo = {
     name: "Jaydeep Gowda KB",
@@ -20,7 +21,16 @@ export const skills = {
     "Professional Skills": ["Strategic Thinking", "Networking", "Negotiation", "Effective Communication", "Languages"],
 };
 
-export const projects = [
+type Project = {
+    title: string;
+    recognition: string | null;
+    image: string;
+    description: string[];
+    githubUrl: string;
+    tags: { name: string; icon: LucideIcon | React.ComponentType<{ className?: string }> }[];
+}
+
+export const projects: Project[] = [
     {
         title: "YoloMart | Smart Retail Ecosystem",
         recognition: "Secured 2nd Place at GlitchVerse 2k25 Project Expo at BIT.",
@@ -29,6 +39,13 @@ export const projects = [
             "Pioneered an intelligent agent for product reasoning and an ML-driven camera system for autonomous user tracking.",
             "Engineered a synchronized Smart Cart featuring high-speed QR/Barcode scanning and real-time data retrieval.",
             "Integrated allergy-safe filtering, behavior-based recommendations, and smart in-store navigation mapping.",
+        ],
+        githubUrl: "https://github.com/jay7-tech/yolomart",
+        tags: [
+            { name: "React", icon: SiReact },
+            { name: "Node.js", icon: SiNodedotjs },
+            { name: "MongoDB", icon: SiMongodb },
+            { name: "Python", icon: SiPython },
         ],
     },
     {
@@ -41,6 +58,13 @@ export const projects = [
             "Revolutionized the user experience with an audio-reactive interface that pulses based on real-time voice frequency data.",
             "Championed a 'Consent-First' architecture where social handles are only revealed upon mutual, explicit agreement.",
         ],
+        githubUrl: "https://github.com/jay7-tech/high-five",
+        tags: [
+            { name: "Flask", icon: SiFlask },
+            { name: "WebSockets", icon: SiWebsockets },
+            { name: "WebRTC", icon: SiWebrtc },
+            { name: "JavaScript", icon: SiJavascript },
+        ],
     },
     {
         title: "Movifi | Online Show Booking Website",
@@ -48,6 +72,13 @@ export const projects = [
         image: "movifi",
         description: [
             "Developed a modern, online show booking website using TypeScript, focusing on a clean user interface and robust booking functionality.",
+        ],
+        githubUrl: "https://github.com/jay7-tech/movifi",
+        tags: [
+            { name: "TypeScript", icon: SiTypescript },
+            { name: "React", icon: SiReact },
+            { name: "Express.js", icon: SiExpress },
+            { name: "MongoDB", icon: SiMongodb },
         ],
     },
     {
@@ -58,6 +89,10 @@ export const projects = [
             "Spearheaded the development of a piezoelectric footstep power generation system.",
             "Designed a fall-sensing alert smart jacket for enhanced personal safety.",
         ],
+        githubUrl: "https://github.com/jay7-tech/anveshana-2024",
+        tags: [
+            { name: "Hardware", icon: GitBranch },
+        ]
     },
 ];
 

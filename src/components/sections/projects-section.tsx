@@ -47,7 +47,7 @@ export function ProjectsSection() {
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-                  {project.description.map((desc, i) => (
+                  {(project.description || []).map((desc, i) => (
                     <li key={i}>{desc}</li>
                   ))}
                 </ul>
