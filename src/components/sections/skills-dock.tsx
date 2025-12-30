@@ -3,98 +3,69 @@
 
 import { skills } from '@/lib/data';
 import { 
-  Atom, BrainCircuit, Bot, Code, Database, Server, Camera, Video, GitBranch, Container, Waves, Palette, Users, Languages, Mic
+  Atom, BrainCircuit, Bot, Code, Database, Server, Camera, Video, GitBranch, Container, Waves, Palette, Users, Languages, Mic, HardDrive
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { AnimatedSection } from '../animated-section';
-import React, { useRef, useState } from 'react';
-import { useMotionValue, motion, useSpring, useTransform } from 'framer-motion';
+import React from 'react';
+import { SiReact, SiMongodb, SiExpress, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc } from 'react-icons/si';
+import type { IconType } from 'react-icons';
 
-const skillIcons: { [key: string]: LucideIcon } = {
-  'React': Atom,
-  'Machine Learning': BrainCircuit,
-  'Robotics Simulation': Bot,
-  'MERN Stack': Code,
-  'JavaScript': Code,
-  'Python': Code,
-  'TypeScript': Code,
-  'Node.js': Server,
-  'MongoDB': Database,
-  'Express.js': Server,
-  'Computer Vision': Camera,
-  'Autonomous Systems': Bot,
-  'ABB Arm Robot': Bot,
-  'WebSockets': Waves,
-  'WebRTC': Video,
-  'Git': GitBranch,
-  'Docker': Container,
-  'Strategic Thinking': Palette,
-  'Networking': Users,
-  'Negotiation': Mic,
-  'Effective Communication': Mic,
-  'Languages': Languages,
-};
 
-const allSkills = Object.values(skills).flat();
+const skillIcons: { [key: string]: IconType | LucideIcon } = {
+    'React': SiReact,
+    'Machine Learning': BrainCircuit,
+    'Robotics Simulation': Bot,
+    'MERN Stack': Code,
+    'JavaScript': SiJavascript,
+    'Python': SiPython,
+    'TypeScript': SiTypescript,
+    'Node.js': SiNodedotjs,
+    'MongoDB': SiMongodb,
+    'Express.js': SiExpress,
+    'Computer Vision': Camera,
+    'Autonomous Systems': Bot,
+    'ABB Arm Robot': Bot,
+    'WebSockets': Waves,
+    'WebRTC': SiWebrtc,
+    'Git': SiGit,
+    'Docker': SiDocker,
+    'Strategic Thinking': Palette,
+    'Networking': Users,
+    'Negotiation': Mic,
+    'Effective Communication': Mic,
+    'Languages': Languages,
+    'Hardware': HardDrive,
+  };
+  
+
+const allSkills = Object.entries(skills).flatMap(([category, skillList]) => 
+    skillList.map(skill => ({name: skill, category}))
+);
 
 export function SkillsDock() {
-  let mouseX = useMotionValue(Infinity);
-
   return (
     <AnimatedSection id="skills">
-       <div className="text-center">
-        <h2 className="font-headline text-3xl md:text-4xl">My Technical Toolkit</h2>
-        <p className="mt-4 text-lg text-muted-foreground">
-        A versatile collection of technologies I use to build robust and innovative solutions.
-        </p>
+      <div className="text-center">
+        <p className="text-sm uppercase text-muted-foreground tracking-widest">My Skills</p>
+        <h2 className="font-headline text-4xl md:text-5xl mt-2">
+            The Secret <span className="text-primary">Sauce</span>
+        </h2>
       </div>
 
-      <div 
-        onMouseMove={(e) => mouseX.set(e.pageX)}
-        onMouseLeave={() => mouseX.set(Infinity)}
-        className="mx-auto flex h-24 items-center justify-center gap-4 rounded-2xl bg-card/50 border px-4 mt-12"
-        style={{
-            perspective: '800px'
-        }}
-      >
-        <div 
-            className="flex justify-center"
-             style={{
-                transform: 'rotateX(20deg)',
-                transformStyle: 'preserve-3d',
-             }}
-        >
-            {allSkills.map((skill, index) => {
-                 const Icon = skillIcons[skill] || Code;
-                return (
-                    <AppIcon mouseX={mouseX} key={index}>
-                        <Icon className="h-8 w-8 text-primary" />
-                    </AppIcon>
-                )
-            })}
-        </div>
+      <div className="mt-16 flex flex-wrap justify-center gap-4">
+        {allSkills.map((skill, index) => {
+          const Icon = skillIcons[skill.name] || Code;
+          return (
+            <div key={index} className="group relative flex flex-col items-center justify-center gap-2">
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl border bg-card shadow-sm transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-primary/20 group-hover:shadow-lg">
+                    <Icon className="h-10 w-10 text-primary" />
+                </div>
+                <p className="text-sm font-medium text-muted-foreground opacity-0 transition-opacity duration-300 group-hover:opacity-100">{skill.name}</p>
+            </div>
+          );
+        })}
       </div>
     </AnimatedSection>
   );
 }
-
-
-function AppIcon({ mouseX, children }: { mouseX: any, children: React.ReactNode }) {
-    let ref = useRef<HTMLDivElement>(null);
-  
-    let { left } = ref.current?.getBoundingClientRect() ?? { left: 0 };
-  
-    let distance = useTransform(mouseX, (val) => val - left - 24);
-    let widthSync = useTransform(distance, [-150, 0, 150], [48, 80, 48]);
-    let width = useSpring(widthSync, { mass: 0.1, stiffness: 150, damping: 12 });
-  
-    return (
-      <motion.div
-        ref={ref}
-        style={{ width }}
-        className="aspect-square w-12 rounded-full bg-card/80 flex items-center justify-center"
-      >
-        {children}
-      </motion.div>
-    );
-  }
