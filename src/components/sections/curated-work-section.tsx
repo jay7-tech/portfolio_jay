@@ -5,7 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { AnimatedSection } from '../animated-section';
 import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
-import { ArrowUpRight } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { SiGithub } from 'react-icons/si';
 
 export function CuratedWorkSection() {
@@ -27,28 +27,42 @@ export function CuratedWorkSection() {
           const image = getImage(project.image);
 
           return (
-            <div key={project.title} className={`grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center`}>
-              <div className={`relative group md:col-span-3 aspect-[4/3] rounded-lg overflow-hidden border`}>
+            <div key={project.title} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="relative group aspect-[4/3] rounded-lg overflow-hidden bg-primary/10 p-4 md:p-8 border">
                 {image && (
-                  <Image
-                    src={image.imageUrl}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    data-ai-hint={image.imageHint}
-                  />
+                  <div className="relative w-full h-full rounded-md overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+                    <Image
+                      src={image.imageUrl}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                      data-ai-hint={image.imageHint}
+                    />
+                  </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0" />
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
+                <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
               </div>
               
-              <div className="flex flex-col justify-center md:col-span-2">
+              <div className="flex flex-col justify-center">
                 {project.recognition && (
                   <Badge variant="secondary" className="mb-3 w-fit">{project.recognition}</Badge>
                 )}
-                <h3 className="font-headline text-2xl md:text-3xl">{project.title}</h3>
+                <h3 className="font-headline text-2xl md:text-3xl relative pl-6">
+                   <span className="absolute left-0 top-1/2 w-4 h-px bg-primary -translate-y-1/2"></span>
+                   {project.title}
+                </h3>
                 <p className="mt-4 text-muted-foreground">
-                  {project.description}
+                  {project.description.paragraph}
                 </p>
+                 <ul className="mt-4 space-y-2">
+                  {project.description.features.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <Plus className="h-4 w-4 text-primary flex-shrink-0 mt-1" />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
                 <div className="flex flex-wrap gap-2 mt-6">
                   {project.tags.map(tag => {
                     const Icon = tag.icon
@@ -65,12 +79,6 @@ export function CuratedWorkSection() {
                     <Link href={project.githubUrl} target="_blank">
                       <SiGithub />
                       <span>View on GitHub</span>
-                    </Link>
-                  </Button>
-                   <Button variant="ghost" asChild>
-                    <Link href="#">
-                      <span>View Details</span>
-                      <ArrowUpRight />
                     </Link>
                   </Button>
                 </div>
