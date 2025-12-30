@@ -20,8 +20,12 @@ export function HeroSection() {
           </Button>
         </div>
       </div>
-      <div className="absolute bottom-10 animate-bounce">
-         <ArrowDown className="h-6 w-6 text-muted-foreground" />
+      <div className="absolute bottom-4 animate-bounce">
+        <Button variant="ghost" size="icon" asChild>
+            <Link href="#about" aria-label="Scroll to about section">
+                <ArrowDown className="h-6 w-6 text-muted-foreground" />
+            </Link>
+        </Button>
       </div>
     </section>
   );
