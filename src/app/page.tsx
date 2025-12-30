@@ -12,6 +12,7 @@ export default function Home() {
     <div className="flex flex-col items-center overflow-x-hidden">
       <BackgroundStars />
       <HeroSection />
+      <SkillsMarquee />
       <div className="container px-4 md:px-6 space-y-24 md:space-y-32 my-24 md:my-32">
         <AboutSection />
         <SkillsDock />
@@ -19,7 +20,6 @@ export default function Home() {
         <ExperienceSection />
         <ContactSection />
       </div>
-      <SkillsMarquee />
     </div>
   );
 }
