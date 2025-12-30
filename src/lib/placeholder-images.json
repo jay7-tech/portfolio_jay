@@ -3,25 +3,25 @@
     {
       "id": "yolomart",
       "description": "Smart retail project image",
-      "imageUrl": "https://images.unsplash.com/photo-1758520388044-74bef6e2709f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbWFydCUyMHJldGFpbHxlbnwwfHx8fDE3NjcwODE3MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1722058130459-c3efb68d6653?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMHJldGFpbHxlbnwwfHx8fDE3NjcwODE3MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "smart retail"
     },
     {
       "id": "highfive",
       "description": "Social platform project image",
-      "imageUrl": "https://images.unsplash.com/photo-1724862936518-ae7fcfc052c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NpYWwlMjBtZWRpYXxlbnwwfHx8fDE3NjY5OTgwNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c29jaWFsJTIwbWVkaWF8ZW58MHx8fHwxNzY2OTk4MDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "social media"
     },
     {
       "id": "movifi",
       "description": "Movie booking project image",
-      "imageUrl": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtb3ZpZSUyMHRpY2tldHN8ZW58MHx8fHwxNzY3MDgxNzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1732294672274-123daf18e101?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb3ZpZSUyMHRpY2tldHN8ZW58MHx8fHwxNzY3MDgxNzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "movie tickets"
     },
     {
       "id": "anveshana",
       "description": "Power generation project image",
-      "imageUrl": "https://images.unsplash.com/photo-1668578841382-90d7099ee848?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlbmVyZ3klMjBpbm5vdmF0aW9ufGVufDB8fHx8MTc2NzA4MTcyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1744470680770-7db82336ca27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlbmVyZ3klMjBpbm5vdmF0aW9ufGVufDB8fHx8MTc2NzA4MTcyMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "energy innovation"
     },
     {
