@@ -28,8 +28,8 @@ export function CuratedWorkSection() {
           const isReversed = index % 2 !== 0;
 
           return (
-            <div key={project.title} className={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center ${isReversed ? 'md:grid-flow-col-dense' : ''}`}>
-              <div className={`relative group aspect-video rounded-lg overflow-hidden border ${isReversed ? 'md:col-start-2' : ''}`}>
+            <div key={project.title} className={`grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-center`}>
+              <div className={`relative group md:col-span-3 aspect-[4/3] rounded-lg overflow-hidden border ${isReversed ? 'md:order-last' : ''}`}>
                 {image && (
                   <Image
                     src={image.imageUrl}
@@ -42,7 +42,7 @@ export function CuratedWorkSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0" />
               </div>
               
-              <div className="flex flex-col justify-center">
+              <div className="flex flex-col justify-center md:col-span-2">
                 {project.recognition && (
                   <Badge variant="secondary" className="mb-3 w-fit">{project.recognition}</Badge>
                 )}
