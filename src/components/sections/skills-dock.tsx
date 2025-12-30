@@ -4,6 +4,7 @@ import { skills } from '@/lib/data';
 import { AnimatedSection } from '../animated-section';
 import React from 'react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Share2, ScanLine } from 'lucide-react';
 
 export function SkillsDock() {
   return (
