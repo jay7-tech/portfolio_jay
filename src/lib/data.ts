@@ -1,5 +1,5 @@
-import { Linkedin, HardDrive, Waves, Bot, BrainCircuit, GitBranch } from "lucide-react";
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiGithub, SiFlask, SiWebrtc } from "react-icons/si";
+import { Linkedin, HardDrive, Waves, Bot, BrainCircuit } from "lucide-react";
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc, SiGithub, SiYolo } from "react-icons/si";
 import type { IconType } from "react-icons";
 
 export const personalInfo = {
@@ -16,7 +16,7 @@ export const personalInfo = {
 };
 
 export const skills = {
-    "Full-Stack Development": ["MERN Stack", "JavaScript", "Python", "TypeScript", "React", "Node.js", "MongoDB", "Express.js"],
+    "Full-Stack Development": ["MERN Stack", "JavaScript", "Python", "TypeScript", "React", "Node.js", "MongoDB", "Express.js", "Flask"],
     "Autonomous Systems & AI": ["AI", "Machine Learning", "Computer Vision", "YOLO", "Autonomous Systems", "Robotics Simulation", "ABB Arm Robot"],
     "Tools & Platforms": ["WebSockets", "WebRTC", "Git", "GitHub", "Docker"],
 };
@@ -140,4 +140,4 @@ export const experiences = [
     },
 ];
 
-export const marqueeSkills = ["ACCESSIBLE", "RESPONSIVE", "DYNAMIC", "INNOVATIVE", "FULL-STACK", "AI-POWERED", "ROBOTICS", "STRATEGIC"];
+export const marqueeSkills = ["INTERACTIVE", "SECURE", "RELIABLE", "ENGAGING", "ACCESSIBLE", "RESPONSIVE", "DYNAMIC", "SCALABLE", "SEARCH OPTIMIZED"];

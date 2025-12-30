@@ -3,14 +3,13 @@
 
 import { skills } from '@/lib/data';
 import { 
-  Bot, Code, Camera, Waves
+  Bot, Code, Camera, Waves, BrainCircuit
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { AnimatedSection } from '../animated-section';
 import React from 'react';
 import { SiReact, SiMongodb, SiExpress, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc, SiGithub } from 'react-icons/si';
 import type { IconType } from 'react-icons';
-import { BrainCircuit } from 'lucide-react';
 
 
 const skillIcons: { [key: string]: IconType | LucideIcon } = {
@@ -18,7 +17,7 @@ const skillIcons: { [key: string]: IconType | LucideIcon } = {
     'AI': BrainCircuit,
     'Machine Learning': BrainCircuit,
     'Robotics Simulation': Bot,
-    'MERN Stack': Code,
+    'MERN Stack': SiReact,
     'JavaScript': SiJavascript,
     'Python': SiPython,
     'TypeScript': SiTypescript,
@@ -34,6 +33,7 @@ const skillIcons: { [key: string]: IconType | LucideIcon } = {
     'Git': SiGit,
     'GitHub': SiGithub,
     'Docker': SiDocker,
+    'Flask': SiFlask,
   };
   
 
@@ -45,20 +45,18 @@ export function SkillsDock() {
   return (
     <AnimatedSection id="skills">
       <div className="text-center">
-        <p className="text-sm uppercase text-muted-foreground tracking-widest">Technical Toolkit</p>
+        <p className="text-sm uppercase text-muted-foreground tracking-widest">MY SKILLS</p>
         <h2 className="font-headline text-4xl md:text-5xl mt-2">
-            The Tools I Use to <span className="text-primary">Build</span>
+            The Secret <span className="text-primary">Sauce</span>
         </h2>
       </div>
 
-      <div className="mt-16 flex flex-wrap justify-center gap-6 md:gap-8">
+      <div className="mt-16 flex flex-wrap justify-center gap-4">
         {allSkills.map((skill, index) => {
           const Icon = skillIcons[skill.name] || Code;
           return (
-            <div key={index} className="group relative" title={skill.name}>
-                <div className="flex h-20 w-20 items-center justify-center rounded-2xl border bg-card shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-2 group-hover:shadow-primary/20 group-hover:shadow-lg">
-                    <Icon className="h-10 w-10 text-primary" />
-                </div>
+            <div key={index} className="group flex h-20 w-20 items-center justify-center rounded-2xl bg-muted/20 border border-border/50 p-4 transition-all duration-300 hover:bg-muted/40" title={skill.name}>
+                <Icon className="h-10 w-10 text-foreground" />
             </div>
           );
         })}
