@@ -20,15 +20,15 @@ export function SkillsMarquee() {
   return (
     <div className="relative w-full py-4 overflow-hidden z-10">
       {/* Background Strap */}
-      <div className="absolute inset-0 rotate-6">
-         <div className="relative w-full h-10 bg-black/40 flex items-center">
+      <div className="absolute inset-0 rotate-6 flex items-center justify-center">
+         <div className="relative w-[150%] h-10 bg-black/40 flex items-center">
           <MarqueeContent />
           <MarqueeContent />
         </div>
       </div>
       {/* Main/Foreground Strap */}
-      <div className="relative -rotate-6">
-        <div className="relative w-full h-10 bg-primary flex items-center border-y-2 border-primary-foreground/20">
+      <div className="relative -rotate-6 flex items-center justify-center">
+        <div className="relative w-[150%] h-10 bg-primary flex items-center border-y-2 border-primary-foreground/20">
           <MarqueeContent />
           <MarqueeContent />
         </div>
