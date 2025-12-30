@@ -3,17 +3,19 @@
 
 import { skills } from '@/lib/data';
 import { 
-  Atom, BrainCircuit, Bot, Code, Database, Server, Camera, Video, GitBranch, Container, Waves, Palette, Users, Languages, Mic, HardDrive
+  Bot, Code, Camera, Waves
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { AnimatedSection } from '../animated-section';
 import React from 'react';
-import { SiReact, SiMongodb, SiExpress, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc } from 'react-icons/si';
+import { SiReact, SiMongodb, SiExpress, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc, SiGithub } from 'react-icons/si';
 import type { IconType } from 'react-icons';
+import { BrainCircuit } from 'lucide-react';
 
 
 const skillIcons: { [key: string]: IconType | LucideIcon } = {
     'React': SiReact,
+    'AI': BrainCircuit,
     'Machine Learning': BrainCircuit,
     'Robotics Simulation': Bot,
     'MERN Stack': Code,
@@ -24,18 +26,14 @@ const skillIcons: { [key: string]: IconType | LucideIcon } = {
     'MongoDB': SiMongodb,
     'Express.js': SiExpress,
     'Computer Vision': Camera,
+    'YOLO': Camera,
     'Autonomous Systems': Bot,
     'ABB Arm Robot': Bot,
     'WebSockets': Waves,
     'WebRTC': SiWebrtc,
     'Git': SiGit,
+    'GitHub': SiGithub,
     'Docker': SiDocker,
-    'Strategic Thinking': Palette,
-    'Networking': Users,
-    'Negotiation': Mic,
-    'Effective Communication': Mic,
-    'Languages': Languages,
-    'Hardware': HardDrive,
   };
   
 

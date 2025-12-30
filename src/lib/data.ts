@@ -1,5 +1,5 @@
-import { Linkedin, HardDrive, Waves } from "lucide-react";
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc } from "react-icons/si";
+import { Linkedin, HardDrive, Waves, Bot, BrainCircuit, GitBranch } from "lucide-react";
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiGithub, SiFlask, SiWebrtc } from "react-icons/si";
 import type { IconType } from "react-icons";
 
 export const personalInfo = {
@@ -10,16 +10,15 @@ export const personalInfo = {
     email: "jayadeepgowda24@gmail.com",
     socials: [
         { name: "LinkedIn", url: "https://linkedin.com/in/jay7788", icon: Linkedin },
-        { name: "GitHub", url: "https://github.com/jay7-tech", icon: SiGit },
+        { name: "GitHub", url: "https://github.com/jay7-tech", icon: SiGithub },
     ],
     summary: "An impact-focused Engineering undergraduate specializing in Robotics and Artificial Intelligence. I drive innovation by fusing cutting-edge technology with an entrepreneurial mindset to architect sustainable solutions with tangible real-world impact. Proficient across the MERN stack, advanced machine learning, and autonomous hardware, I am a strategic communicator who excels at mastering complex technical challenges through excellence and strategic communication.",
 };
 
 export const skills = {
     "Full-Stack Development": ["MERN Stack", "JavaScript", "Python", "TypeScript", "React", "Node.js", "MongoDB", "Express.js"],
-    "Autonomous Systems & AI": ["Machine Learning", "Computer Vision", "Autonomous Systems", "Robotics Simulation", "ABB Arm Robot"],
-    "Tools & Platforms": ["WebSockets", "WebRTC", "Git", "Docker"],
-    "Professional Skills": ["Strategic Thinking", "Networking", "Negotiation", "Effective Communication", "Languages"],
+    "Autonomous Systems & AI": ["AI", "Machine Learning", "Computer Vision", "YOLO", "Autonomous Systems", "Robotics Simulation", "ABB Arm Robot"],
+    "Tools & Platforms": ["WebSockets", "WebRTC", "Git", "GitHub", "Docker"],
 };
 
 type Project = {
