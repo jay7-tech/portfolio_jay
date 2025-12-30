@@ -5,7 +5,7 @@ import { AnimatedSection } from '../animated-section';
 import React from 'react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Bot, Share2, ScanLine } from 'lucide-react';
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc, SiGithub, SiTailwindcss, SiCss3, SiFirebase, SiAutodesk } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiPython, SiTypescript, SiJavascript, SiDocker, SiGit, SiFlask, SiWebrtc, SiGithub, SiTailwindcss, SiFirebase, SiAutodesk } from 'react-icons/si';
 
 
 const YoloIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -31,7 +31,6 @@ const iconMap: { [key: string]: React.ElementType } = {
     SiWebrtc,
     SiGithub,
     SiTailwindcss,
-    SiCss3,
     SiFirebase,
     SiAutodesk,
     Bot,

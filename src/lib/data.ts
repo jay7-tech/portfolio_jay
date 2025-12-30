@@ -23,7 +23,6 @@ export const skills = [
       { name: "JavaScript", description: "", icon: SiJavascript },
       { name: "TypeScript", description: "", icon: SiTypescript },
       { name: "Tailwind CSS", description: "Styling", icon: SiTailwindcss },
-      { name: "CSS", description: "Foundational styling", icon: SiCss3 },
       { name: "Python", description: "", icon: SiPython },
       { name: "Machine Learning", description: "", icon: Share2 },
       { name: "Computer Vision", description: "", icon: ScanLine },
